@@ -1,2 +1,12 @@
 ---
 # vars file for common
+util_packages:
+  - base-devel
+  - htop
+  - vim
+  - rsync
+  - mlocate
+  - python2-pip
+  - git
+  - bzr
+  - mercurial

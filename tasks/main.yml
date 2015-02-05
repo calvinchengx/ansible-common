@@ -1,2 +1,8 @@
 ---
 # tasks file for common
+- name: Update pacman cache 
+  pacman: update_cache=yes
+
+- name: Install packages that we use oftem
+  pacman: name={{ item }} state=present
+  with_items: util_packages
