@@ -1,5 +1,8 @@
 ---
 # tasks file for common
+- name: Make sure we have python2
+  raw: sudo pacman -S python2 --noconfirm
+
 - name: Update pacman cache 
   pacman: update_cache=yes
 
