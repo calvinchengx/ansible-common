@@ -1,2 +1,4 @@
 ---
 # handlers file for common
+- name: Run updatedb
+  command: sudo updatedb
